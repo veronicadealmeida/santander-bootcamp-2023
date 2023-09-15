@@ -1,4 +1,4 @@
-package edu.vda.Santander.dev3;
+package edu.vda.Santander.dev;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.servers.Server;

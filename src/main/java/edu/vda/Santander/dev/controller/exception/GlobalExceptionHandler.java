@@ -1,4 +1,4 @@
-package edu.vda.Santander.dev3.controller.exception;
+package edu.vda.Santander.dev.controller.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

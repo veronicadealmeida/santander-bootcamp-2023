@@ -1,6 +1,6 @@
-package edu.vda.Santander.dev3.domain.repository;
+package edu.vda.Santander.dev.domain.repository;
 
-import edu.vda.Santander.dev3.domain.model.User;
+import edu.vda.Santander.dev.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

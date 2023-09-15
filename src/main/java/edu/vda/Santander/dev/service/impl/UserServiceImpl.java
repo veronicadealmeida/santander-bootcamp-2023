@@ -1,8 +1,8 @@
-package edu.vda.Santander.dev3.service.impl;
+package edu.vda.Santander.dev.service.impl;
 
-import edu.vda.Santander.dev3.domain.model.User;
-import edu.vda.Santander.dev3.domain.repository.UserRepository;
-import edu.vda.Santander.dev3.service.UserService;
+import edu.vda.Santander.dev.domain.model.User;
+import edu.vda.Santander.dev.domain.repository.UserRepository;
+import edu.vda.Santander.dev.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;

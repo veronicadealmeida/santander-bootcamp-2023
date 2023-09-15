@@ -1,4 +1,4 @@
-package edu.vda.Santander.dev3.domain.model;
+package edu.vda.Santander.dev.domain.model;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;

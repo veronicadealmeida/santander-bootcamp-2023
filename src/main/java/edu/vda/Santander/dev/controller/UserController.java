@@ -1,21 +1,32 @@
-package edu.vda.Santander.dev3.controller;
+package edu.vda.Santander.dev.controller;
 
-import edu.vda.Santander.dev3.domain.model.User;
-import edu.vda.Santander.dev3.service.UserService;
+import edu.vda.Santander.dev.domain.model.User;
+import edu.vda.Santander.dev.repository.UserAllRepository;
+import edu.vda.Santander.dev.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
     private final UserService userService;
+    private final UserAllRepository userAllRepository;
 
-    public UserController(UserService userService) {
+
+    public UserController(UserService userService, UserAllRepository userAllRepository) {
         this.userService = userService;
+        this.userAllRepository = userAllRepository;
+    }
+
+
+    @GetMapping
+    public @ResponseBody List<User> list() {
+        return userAllRepository.findAll();
     }
 
     @GetMapping("/{id}")
